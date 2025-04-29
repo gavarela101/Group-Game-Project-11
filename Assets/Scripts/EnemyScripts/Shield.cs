@@ -1,6 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+/*
+ * gabriel varela 
+ * 4/29/25
+ * Contains the code on enemies' shield
+*/
 
 public class NewBehaviourScript : MonoBehaviour
 {
