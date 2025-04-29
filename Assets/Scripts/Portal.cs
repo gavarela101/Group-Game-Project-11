@@ -2,11 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpiderCannon : MonoBehaviour
+public class Portal : MonoBehaviour
 {
-    //doesn't follow player physically, turns to look at player and shoot, but stays a certain distance away
-
-
     // Start is called before the first frame update
     void Start()
     {
