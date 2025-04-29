@@ -5,7 +5,7 @@ using UnityEngine;
 /*
  * Jayden Saelee Chao
  * Contols player movement and other things
- * 4/23/2025
+ * 4/29/2025
  */
 
 public class PlayerController : MonoBehaviour
@@ -15,6 +15,11 @@ public class PlayerController : MonoBehaviour
     public float speed = 12f;
     public float gravity = -9.81f;
     public float jumpHeight = 3f;
+    public int greenArts = 0;
+    public int goldArts = 0;
+    public int blueArts = 0;
+    public int spikeArts = 0;
+    public int orangeArts = 0;
 
     public Transform groundCheck;
     public float groundDistance = 0.4f;
