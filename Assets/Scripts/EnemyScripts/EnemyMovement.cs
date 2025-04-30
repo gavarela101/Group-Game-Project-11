@@ -4,14 +4,14 @@ using UnityEngine;
 /*
  * gabriel varela 
  * 4/29/25
- * Contains the code on enemy movement and helath
+ * Contains the code on enemy movement
 */
 
 public class EnemyMovement : MonoBehaviour
 {
     public GameObject Player;
     public float speed;
-    public float health;
+    public int damage = 15;
 
     void Update()
     {
@@ -25,5 +25,17 @@ public class EnemyMovement : MonoBehaviour
         transform.Translate(direction * speed * Time.deltaTime);
     }
 
-    //Code to make enemy dissapear once health is <= 0
+    /*
+    //deals damage to player on collision 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.GetComponent<Player>())
+        {
+            if (other.GetComponent<Player>().health >= 0)
+            {
+                other.GetComponent<Player>().health -= damage;
+            }
+        }
+    }
+    */
 }

@@ -9,15 +9,19 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public int Health;
+
+    //Subtracts shield health when shot by player
+    public void takeDamage()
     {
-        
+        //have shield lose health 
+        Health--;
+
+        //check if shield has zero health 
+        if (Health <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }
