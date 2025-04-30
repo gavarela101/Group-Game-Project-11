@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 471b204d16d009d45948f7693f7f82f8
+  - enabled: 1
+    path: Assets/Scenes/Xabiel's.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 71256ea575fa0364ca1b35e71d2aa97f
+  - enabled: 1
+    path: Assets/Scenes/WinScreen.unity
+    guid: cb7b863576aa95547a053dfecd16fab3
   m_configObjects: {}

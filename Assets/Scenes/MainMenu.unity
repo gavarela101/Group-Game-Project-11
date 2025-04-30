@@ -288,7 +288,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1138,7 +1138,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: 126}
+  m_AnchoredPosition: {x: 10, y: 93.1}
   m_SizeDelta: {x: 308.5261, y: 100.4638}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2032570476
@@ -1170,15 +1170,15 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4291450453
-  m_fontColor: {r: 0.33268064, g: 0.33808976, b: 0.7924528, a: 1}
+    rgba: 4285162082
+  m_fontColor: {r: 0.38572443, g: 0.38597548, b: 0.41509432, a: 1}
   m_enableVertexGradient: 1
   m_colorMode: 3
   m_fontColorGradient:
-    topLeft: {r: 0, g: 0.8305149, b: 1, a: 1}
+    topLeft: {r: 0, g: 0.83137226, b: 1, a: 1}
     topRight: {r: 0, g: 0.8442073, b: 1, a: 1}
     bottomLeft: {r: 1, g: 0.96941197, b: 0, a: 1}
-    bottomRight: {r: 1, g: 0.875397, b: 0, a: 1}
+    bottomRight: {r: 1, g: 0.8745098, b: 0, a: 1}
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
@@ -1224,7 +1224,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 3.225647, y: 0, z: 0, w: -26.785461}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
