@@ -345,7 +345,7 @@ Transform:
   m_GameObject: {fileID: 4731440221009886150}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.31}
+  m_LocalPosition: {x: 0.9, y: 0, z: -0.36}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -434,6 +434,7 @@ GameObject:
   - component: {fileID: 406060703727474711}
   - component: {fileID: 7057440128277061728}
   - component: {fileID: 852728648333076792}
+  - component: {fileID: 501270800593052668}
   m_Layer: 0
   m_Name: Mancubus
   m_TagString: Untagged
@@ -514,6 +515,28 @@ MonoBehaviour:
   Player: {fileID: 0}
   desiredDistance: 0
   speed: 0
+--- !u!114 &501270800593052668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4895009665992597157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96ce985f7f8317c4d86a683e6c59ff3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 7
+  angle: 50
+  PlayerScript: {fileID: 0}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 0
+  obstructionMask:
+    serializedVersion: 2
+    m_Bits: 0
+  CanSeePlayer: 0
 --- !u!1 &6286505205453960295
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,7 +562,7 @@ Transform:
   m_GameObject: {fileID: 6286505205453960295}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.009748539, z: -0, w: 0.9999525}
-  m_LocalPosition: {x: 0.53093064, y: -2.6612878, z: -11.399289}
+  m_LocalPosition: {x: 1.43, y: -2.6612878, z: -11.45}
   m_LocalScale: {x: 0.70778, y: 1.7846123, z: 1.7835807}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -682,7 +705,7 @@ Transform:
   m_GameObject: {fileID: 9016260328736881705}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: -3.95}
+  m_LocalPosition: {x: 0.9, y: 0, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
