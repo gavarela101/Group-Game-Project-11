@@ -274,7 +274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 647cd89655214114c8369af103ef425f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 250
+  mouseSensitivity: 300
   topClamp: -90
   bottomClamp: 90
 --- !u!114 &3695964218024005672
@@ -291,7 +291,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 12
   gravity: -9.81
-  jumpHeight: 3
+  jumpHeight: 5
+  greenArts: 0
+  goldArts: 0
+  blueArts: 0
+  spikeArts: 0
+  orangeArts: 0
   groundCheck: {fileID: 3130335795343858885}
   groundDistance: 0.4
   groundMask:
