@@ -9,20 +9,17 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    public GameObject Player;
+    public Transform Player;
     public float speed;
     public int damage = 15;
 
     void Update()
     {
-        // Calculate the direction from the enemy to the player
-        Vector3 direction = Player.transform.position - transform.position;
+        transform.LookAt(Player);
 
-        // Normalize the direction vector to get a unit vector (length 1)
-        direction.Normalize();
+        float distance = Vector3.Distance(Player.position, transform.position);
 
-        // Move the enemy towards the player
-        transform.Translate(direction * speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, Player.position, speed * Time.deltaTime);
     }
 
     /*

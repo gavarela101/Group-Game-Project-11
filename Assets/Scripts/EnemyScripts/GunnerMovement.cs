@@ -14,21 +14,20 @@ public class GunnerMovement : MonoBehaviour
     public float desiredDistance;
     public float speed;
 
-    private void Update()
+    void Update()
     {
-        float distance = Vector3.Distance(transform.position, Player.position);
+        transform.LookAt(Player);
+
+        float distance = Vector3.Distance(Player.position, transform.position);
 
         if (distance < desiredDistance)
         {
-            // Move the enemy away from the player
-            Vector3 direction = (Player.position - transform.position).normalized;
-            transform.Translate(-direction * speed * Time.deltaTime);
+            Vector3 currentPosition = transform.position;
         }
         else
         {
             // Move the enemy towards the player
-            Vector3 direction = (Player.position - transform.position).normalized;
-            transform.Translate(direction * speed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, Player.position, speed * Time.deltaTime);
         }
     }
 }

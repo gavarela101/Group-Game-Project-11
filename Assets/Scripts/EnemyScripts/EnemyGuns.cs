@@ -29,9 +29,6 @@ public class Gunner : MonoBehaviour
     void Update()
     {
         inRange = Vector3.Distance(transform.position, Player.position) < range;
-
-        if (inRange)
-            transform.LookAt(Player);
     }
 
     private void Shoot()
