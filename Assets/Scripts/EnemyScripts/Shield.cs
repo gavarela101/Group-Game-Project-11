@@ -3,25 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 /*
  * gabriel varela 
- * 4/29/25
+ * 5/6/25
  * Contains the code on enemies' shield
 */
 
 public class NewBehaviourScript : MonoBehaviour
 {
+    public int maxHealth = 100;
+    private int currentHealth;
 
-    public int Health;
-
-    //Subtracts shield health when shot by player
-    public void takeDamage()
+    void Start()
     {
-        //have shield lose health 
-        Health--;
+        currentHealth = maxHealth;
+    }
 
-        //check if shield has zero health 
-        if (Health <= 0)
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        if (currentHealth <= 0)
         {
-            Destroy(gameObject);
+            Destroy();
         }
+    }
+
+    void Destroy()
+    {
+        Destroy(gameObject);
     }
 }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9020549510484540108}
   - component: {fileID: 4765296269038931424}
   m_Layer: 0
-  m_Name: spawner
+  m_Name: BossSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyPrefabs:
-  - {fileID: 1983978249516967078, guid: 9682b64ab0b5afd448e1c19092487caf, type: 3}
-  - {fileID: 8509984374930100401, guid: 27be5933bd7c6a342a0485574c3e8851, type: 3}
-  - {fileID: 708849745158626044, guid: 26e9dc17a06159140abae344449f1ef8, type: 3}
-  spawnInterval: 4
+  - {fileID: 3552163934153364466, guid: da847590d9d2a214cae1ae385c9df065, type: 3}
+  - {fileID: 7339402767964035019, guid: 955cfbeb5715d1849a67a801fcb8ba0f, type: 3}
+  - {fileID: 59442154373219619, guid: 962f2923fe768b8419c0c023c8b16711, type: 3}
+  spawnInterval: 10
   spawnAreaSize: {x: 10, y: 0, z: 10}

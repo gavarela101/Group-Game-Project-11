@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 /*
  * gabriel varela 
- * 4/29/25
- * Contains the code on enemy guns attack and health
+ * 5/6/25
+ * Contains the code on enemy guns attack
 */
 
 public class Gunner : MonoBehaviour
@@ -24,6 +24,7 @@ public class Gunner : MonoBehaviour
     {
         float rand = Random.Range(1.0f, 2.0f);
         InvokeRepeating("Shoot", 2, rand);
+        Player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     void Update()
@@ -37,18 +38,6 @@ public class Gunner : MonoBehaviour
         {
             Rigidbody bullet = (Rigidbody)Instantiate(projectile, transform.position + transform.forward, transform.rotation);
             bullet.AddForce(transform.forward * bulletImpulse, ForceMode.Impulse);
-        }
-    }
-
-    public void Destroy()
-    {
-        //have Enemy lose health 
-        gunHealth--;
-
-        //check if Enemy has zero health 
-        if (gunHealth <= 0)
-        {
-            Destroy(gameObject);
         }
     }
 }

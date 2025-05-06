@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 6349667}
   - component: {fileID: 6349666}
   - component: {fileID: 6349665}
+  - component: {fileID: 6349669}
   m_Layer: 3
   m_Name: Floor (10)
   m_TagString: Untagged
@@ -228,6 +229,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1470871159}
   m_LocalEulerAnglesHint: {x: 15.015, y: 89.514, z: 0}
+--- !u!114 &6349669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6349664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 1
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.6666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 0}
+  m_BuildHeightMesh: 0
 --- !u!1 &10784470
 GameObject:
   m_ObjectHideFlags: 0
@@ -1080,6 +1112,7 @@ GameObject:
   - component: {fileID: 174057188}
   - component: {fileID: 174057187}
   - component: {fileID: 174057186}
+  - component: {fileID: 174057190}
   m_Layer: 3
   m_Name: Floor (23)
   m_TagString: Untagged
@@ -1173,6 +1206,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1470871159}
   m_LocalEulerAnglesHint: {x: -0.097, y: 89.719, z: 15.591}
+--- !u!114 &174057190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174057185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 1
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.6666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 0}
+  m_BuildHeightMesh: 0
 --- !u!1 &175995932
 GameObject:
   m_ObjectHideFlags: 0
@@ -1500,6 +1564,7 @@ GameObject:
   - component: {fileID: 214543846}
   - component: {fileID: 214543845}
   - component: {fileID: 214543844}
+  - component: {fileID: 214543848}
   m_Layer: 3
   m_Name: Floor (5)
   m_TagString: Untagged
@@ -1593,6 +1658,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1470871159}
   m_LocalEulerAnglesHint: {x: 0, y: 0.703, z: 0}
+--- !u!114 &214543848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214543843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 1
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.6666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 0}
+  m_BuildHeightMesh: 0
 --- !u!1 &217110717
 GameObject:
   m_ObjectHideFlags: 0
@@ -1710,6 +1806,7 @@ GameObject:
   - component: {fileID: 232279347}
   - component: {fileID: 232279346}
   - component: {fileID: 232279345}
+  - component: {fileID: 232279349}
   m_Layer: 3
   m_Name: Floor (17)
   m_TagString: Untagged
@@ -1803,6 +1900,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1470871159}
   m_LocalEulerAnglesHint: {x: 11.863, y: 90.813, z: 0.016}
+--- !u!114 &232279349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232279344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 1
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.6666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 0}
+  m_BuildHeightMesh: 0
 --- !u!1 &253222759
 GameObject:
   m_ObjectHideFlags: 0
@@ -2655,6 +2783,7 @@ GameObject:
   - component: {fileID: 351200498}
   - component: {fileID: 351200497}
   - component: {fileID: 351200496}
+  - component: {fileID: 351200500}
   m_Layer: 3
   m_Name: Floor (8)
   m_TagString: Untagged
@@ -2748,6 +2877,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1470871159}
   m_LocalEulerAnglesHint: {x: 0, y: 179.56, z: 0}
+--- !u!114 &351200500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351200495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 1
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.6666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 0}
+  m_BuildHeightMesh: 0
 --- !u!1 &355733597
 GameObject:
   m_ObjectHideFlags: 0
@@ -3043,6 +3203,7 @@ GameObject:
   - component: {fileID: 408779674}
   - component: {fileID: 408779673}
   - component: {fileID: 408779672}
+  - component: {fileID: 408779676}
   m_Layer: 3
   m_Name: Floor (14)
   m_TagString: Untagged
@@ -3136,6 +3297,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1470871159}
   m_LocalEulerAnglesHint: {x: 0, y: 0.703, z: 0}
+--- !u!114 &408779676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408779671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 1
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.6666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 0}
+  m_BuildHeightMesh: 0
 --- !u!1 &414101665
 GameObject:
   m_ObjectHideFlags: 0
@@ -3358,6 +3550,7 @@ GameObject:
   - component: {fileID: 433250801}
   - component: {fileID: 433250800}
   - component: {fileID: 433250799}
+  - component: {fileID: 433250803}
   m_Layer: 3
   m_Name: Floor (25)
   m_TagString: Untagged
@@ -3451,6 +3644,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1470871159}
   m_LocalEulerAnglesHint: {x: 0, y: 270.562, z: 0}
+--- !u!114 &433250803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433250798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 1
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.6666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 0}
+  m_BuildHeightMesh: 0
 --- !u!1 &442908818
 GameObject:
   m_ObjectHideFlags: 0
@@ -3673,6 +3897,7 @@ GameObject:
   - component: {fileID: 506391280}
   - component: {fileID: 506391279}
   - component: {fileID: 506391278}
+  - component: {fileID: 506391282}
   m_Layer: 3
   m_Name: Floor (13)
   m_TagString: Untagged
@@ -3766,6 +3991,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1470871159}
   m_LocalEulerAnglesHint: {x: 0, y: -0.938, z: 0}
+--- !u!114 &506391282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506391277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 1
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.6666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 0}
+  m_BuildHeightMesh: 0
 --- !u!1 &506681806
 GameObject:
   m_ObjectHideFlags: 0
@@ -4408,6 +4664,7 @@ GameObject:
   - component: {fileID: 599847087}
   - component: {fileID: 599847086}
   - component: {fileID: 599847085}
+  - component: {fileID: 599847089}
   m_Layer: 3
   m_Name: Floor (16)
   m_TagString: Untagged
@@ -4501,6 +4758,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1470871159}
   m_LocalEulerAnglesHint: {x: 11.041, y: 90.55, z: 0}
+--- !u!114 &599847089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599847084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 1
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.6666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 0}
+  m_BuildHeightMesh: 0
 --- !u!1 &600071614
 GameObject:
   m_ObjectHideFlags: 0
@@ -5972,6 +6260,7 @@ GameObject:
   - component: {fileID: 820141448}
   - component: {fileID: 820141447}
   - component: {fileID: 820141446}
+  - component: {fileID: 820141450}
   m_Layer: 3
   m_Name: Floor (7)
   m_TagString: Untagged
@@ -6065,6 +6354,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1470871159}
   m_LocalEulerAnglesHint: {x: 0, y: 179.56, z: 0}
+--- !u!114 &820141450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820141445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 1
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.6666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 0}
+  m_BuildHeightMesh: 0
 --- !u!1 &821481542
 GameObject:
   m_ObjectHideFlags: 0
@@ -6077,6 +6397,7 @@ GameObject:
   - component: {fileID: 821481545}
   - component: {fileID: 821481544}
   - component: {fileID: 821481543}
+  - component: {fileID: 821481547}
   m_Layer: 3
   m_Name: Floor
   m_TagString: Untagged
@@ -6170,6 +6491,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1470871159}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &821481547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821481542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 1
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.6666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 0}
+  m_BuildHeightMesh: 0
 --- !u!1 &826474003
 GameObject:
   m_ObjectHideFlags: 0
@@ -6497,6 +6849,7 @@ GameObject:
   - component: {fileID: 880880225}
   - component: {fileID: 880880224}
   - component: {fileID: 880880223}
+  - component: {fileID: 880880227}
   m_Layer: 3
   m_Name: Floor (19)
   m_TagString: Untagged
@@ -6590,6 +6943,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1470871159}
   m_LocalEulerAnglesHint: {x: 0, y: 89.514, z: 0}
+--- !u!114 &880880227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880880222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 1
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.6666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 0}
+  m_BuildHeightMesh: 0
 --- !u!1 &984966893
 GameObject:
   m_ObjectHideFlags: 0
@@ -6602,6 +6986,7 @@ GameObject:
   - component: {fileID: 984966896}
   - component: {fileID: 984966895}
   - component: {fileID: 984966894}
+  - component: {fileID: 984966898}
   m_Layer: 3
   m_Name: Floor (12)
   m_TagString: Untagged
@@ -6695,6 +7080,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1470871159}
   m_LocalEulerAnglesHint: {x: 0, y: 89.514, z: 0}
+--- !u!114 &984966898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984966893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 1
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.6666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 0}
+  m_BuildHeightMesh: 0
 --- !u!1 &988877676
 GameObject:
   m_ObjectHideFlags: 0
@@ -6707,6 +7123,7 @@ GameObject:
   - component: {fileID: 988877679}
   - component: {fileID: 988877678}
   - component: {fileID: 988877677}
+  - component: {fileID: 988877681}
   m_Layer: 3
   m_Name: Floor (24)
   m_TagString: Untagged
@@ -6800,6 +7217,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1470871159}
   m_LocalEulerAnglesHint: {x: -14.421, y: 90.085, z: 0}
+--- !u!114 &988877681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988877676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 1
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.6666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 0}
+  m_BuildHeightMesh: 0
 --- !u!1 &1019914026
 GameObject:
   m_ObjectHideFlags: 0
@@ -6917,6 +7365,7 @@ GameObject:
   - component: {fileID: 1026761591}
   - component: {fileID: 1026761590}
   - component: {fileID: 1026761589}
+  - component: {fileID: 1026761593}
   m_Layer: 3
   m_Name: Floor (26)
   m_TagString: Untagged
@@ -7010,6 +7459,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1470871159}
   m_LocalEulerAnglesHint: {x: 0, y: 359.87, z: 0}
+--- !u!114 &1026761593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026761588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 1
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.6666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 0}
+  m_BuildHeightMesh: 0
 --- !u!1 &1031994651
 GameObject:
   m_ObjectHideFlags: 0
@@ -7022,6 +7502,7 @@ GameObject:
   - component: {fileID: 1031994654}
   - component: {fileID: 1031994653}
   - component: {fileID: 1031994652}
+  - component: {fileID: 1031994656}
   m_Layer: 3
   m_Name: Floor (1)
   m_TagString: Untagged
@@ -7115,6 +7596,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1470871159}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1031994656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031994651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 1
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.6666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 0}
+  m_BuildHeightMesh: 0
 --- !u!1 &1051789286
 GameObject:
   m_ObjectHideFlags: 0
@@ -7127,6 +7639,7 @@ GameObject:
   - component: {fileID: 1051789289}
   - component: {fileID: 1051789288}
   - component: {fileID: 1051789287}
+  - component: {fileID: 1051789291}
   m_Layer: 3
   m_Name: Floor (6)
   m_TagString: Untagged
@@ -7220,6 +7733,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1470871159}
   m_LocalEulerAnglesHint: {x: 0, y: 89.514, z: 0}
+--- !u!114 &1051789291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051789286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 1
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.6666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 0}
+  m_BuildHeightMesh: 0
 --- !u!1 &1052407745
 GameObject:
   m_ObjectHideFlags: 0
@@ -7547,6 +8091,7 @@ GameObject:
   - component: {fileID: 1092400245}
   - component: {fileID: 1092400244}
   - component: {fileID: 1092400243}
+  - component: {fileID: 1092400247}
   m_Layer: 3
   m_Name: Floor (22)
   m_TagString: Untagged
@@ -7640,6 +8185,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1470871159}
   m_LocalEulerAnglesHint: {x: 0, y: 89.514, z: 0}
+--- !u!114 &1092400247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092400242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 1
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.6666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 0}
+  m_BuildHeightMesh: 0
 --- !u!1 &1113909300
 GameObject:
   m_ObjectHideFlags: 0
@@ -8073,6 +8649,7 @@ GameObject:
   - component: {fileID: 1160795853}
   - component: {fileID: 1160795852}
   - component: {fileID: 1160795851}
+  - component: {fileID: 1160795855}
   m_Layer: 3
   m_Name: Floor (15)
   m_TagString: Untagged
@@ -8166,6 +8743,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1470871159}
   m_LocalEulerAnglesHint: {x: 0, y: 90.55, z: 0}
+--- !u!114 &1160795855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160795850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 1
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.6666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 0}
+  m_BuildHeightMesh: 0
 --- !u!1 &1168218967
 GameObject:
   m_ObjectHideFlags: 0
@@ -8178,6 +8786,7 @@ GameObject:
   - component: {fileID: 1168218970}
   - component: {fileID: 1168218969}
   - component: {fileID: 1168218968}
+  - component: {fileID: 1168218972}
   m_Layer: 3
   m_Name: Floor (18)
   m_TagString: Untagged
@@ -8271,6 +8880,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1470871159}
   m_LocalEulerAnglesHint: {x: -0.013, y: 90.711, z: -0.113}
+--- !u!114 &1168218972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168218967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 1
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.6666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 0}
+  m_BuildHeightMesh: 0
 --- !u!1 &1180709949
 GameObject:
   m_ObjectHideFlags: 0
@@ -8283,6 +8923,7 @@ GameObject:
   - component: {fileID: 1180709952}
   - component: {fileID: 1180709951}
   - component: {fileID: 1180709950}
+  - component: {fileID: 1180709954}
   m_Layer: 3
   m_Name: Floor (21)
   m_TagString: Untagged
@@ -8376,6 +9017,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1470871159}
   m_LocalEulerAnglesHint: {x: 0, y: 89.514, z: 0}
+--- !u!114 &1180709954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180709949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 1
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.6666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: f6c963b1dff66dc489cf1966b815421d, type: 2}
+  m_BuildHeightMesh: 0
 --- !u!1 &1200171448
 GameObject:
   m_ObjectHideFlags: 0
@@ -9228,6 +9900,7 @@ GameObject:
   - component: {fileID: 1316009604}
   - component: {fileID: 1316009603}
   - component: {fileID: 1316009602}
+  - component: {fileID: 1316009606}
   m_Layer: 3
   m_Name: Floor (4)
   m_TagString: Untagged
@@ -9321,6 +9994,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1470871159}
   m_LocalEulerAnglesHint: {x: 0, y: 0.703, z: 0}
+--- !u!114 &1316009606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316009601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 1
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.6666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 0}
+  m_BuildHeightMesh: 0
 --- !u!1 &1330164679
 GameObject:
   m_ObjectHideFlags: 0
@@ -9858,6 +10562,7 @@ GameObject:
   - component: {fileID: 1420022418}
   - component: {fileID: 1420022417}
   - component: {fileID: 1420022416}
+  - component: {fileID: 1420022420}
   m_Layer: 3
   m_Name: Floor (3)
   m_TagString: Untagged
@@ -9951,6 +10656,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1470871159}
   m_LocalEulerAnglesHint: {x: 0, y: 89.514, z: 0}
+--- !u!114 &1420022420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420022415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 1
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.6666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 0}
+  m_BuildHeightMesh: 0
 --- !u!1 &1470871155
 GameObject:
   m_ObjectHideFlags: 0
@@ -10300,6 +11036,7 @@ GameObject:
   - component: {fileID: 1521171774}
   - component: {fileID: 1521171773}
   - component: {fileID: 1521171772}
+  - component: {fileID: 1521171776}
   m_Layer: 3
   m_Name: Floor (11)
   m_TagString: Untagged
@@ -10393,6 +11130,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1470871159}
   m_LocalEulerAnglesHint: {x: 15.015, y: 89.514, z: 0}
+--- !u!114 &1521171776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521171771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 1
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.6666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 0}
+  m_BuildHeightMesh: 0
 --- !u!1 &1568612683
 GameObject:
   m_ObjectHideFlags: 0
@@ -10510,6 +11278,7 @@ GameObject:
   - component: {fileID: 1586717211}
   - component: {fileID: 1586717210}
   - component: {fileID: 1586717209}
+  - component: {fileID: 1586717213}
   m_Layer: 3
   m_Name: Floor (9)
   m_TagString: Untagged
@@ -10603,6 +11372,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1470871159}
   m_LocalEulerAnglesHint: {x: 0, y: 270.562, z: 0}
+--- !u!114 &1586717213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586717208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 1
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.6666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 0}
+  m_BuildHeightMesh: 0
 --- !u!1 &1645358184
 GameObject:
   m_ObjectHideFlags: 0
@@ -13555,6 +14355,7 @@ GameObject:
   - component: {fileID: 2071404941}
   - component: {fileID: 2071404940}
   - component: {fileID: 2071404939}
+  - component: {fileID: 2071404943}
   m_Layer: 3
   m_Name: Floor (2)
   m_TagString: Untagged
@@ -13648,6 +14449,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1470871159}
   m_LocalEulerAnglesHint: {x: 0, y: 89.514, z: 0}
+--- !u!114 &2071404943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071404938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 1
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.6666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 0}
+  m_BuildHeightMesh: 0
 --- !u!1 &2108912826
 GameObject:
   m_ObjectHideFlags: 0
@@ -13660,6 +14492,7 @@ GameObject:
   - component: {fileID: 2108912829}
   - component: {fileID: 2108912828}
   - component: {fileID: 2108912827}
+  - component: {fileID: 2108912831}
   m_Layer: 3
   m_Name: Floor (20)
   m_TagString: Untagged
@@ -13753,6 +14586,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1470871159}
   m_LocalEulerAnglesHint: {x: 0, y: 89.514, z: 0}
+--- !u!114 &2108912831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108912826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 1
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.6666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 0}
+  m_BuildHeightMesh: 0
 --- !u!1 &2118425568
 GameObject:
   m_ObjectHideFlags: 0
