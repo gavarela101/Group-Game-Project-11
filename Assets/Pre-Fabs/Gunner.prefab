@@ -327,7 +327,7 @@ GameObject:
   - component: {fileID: 2395557401401580813}
   - component: {fileID: 3085133251520385494}
   - component: {fileID: 7035199878849643784}
-  - component: {fileID: 2920601806383873016}
+  - component: {fileID: 5221357490184308534}
   m_Layer: 0
   m_Name: Gun (1)
   m_TagString: Untagged
@@ -422,7 +422,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2920601806383873016
+--- !u!114 &5221357490184308534
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -440,7 +440,7 @@ MonoBehaviour:
   attackRate: 1
   range: 30
   bulletImpulse: 20
-  gunHealth: 5
+  gunHealth: 0
 --- !u!1 &8509984374930100401
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,8 +455,8 @@ GameObject:
   - component: {fileID: 5452990781851368767}
   - component: {fileID: 4496394363913172662}
   - component: {fileID: 847428308297772202}
-  - component: {fileID: 6046054569694678198}
-  - component: {fileID: 1735401412984709127}
+  - component: {fileID: 9202838906150960778}
+  - component: {fileID: 1358144017024159218}
   m_Layer: 0
   m_Name: Gunner
   m_TagString: Untagged
@@ -595,7 +595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 5
---- !u!114 &6046054569694678198
+--- !u!114 &9202838906150960778
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -604,31 +604,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 8509984374930100401}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfe2fe5d70a5c3645b3c6e5fa8e1a749, type: 3}
+  m_Script: {fileID: 11500000, guid: c5087089d6826854f81d3fbc080ac1d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  desiredDistance: 10
-  speed: 4
---- !u!114 &1735401412984709127
-MonoBehaviour:
+  nav: {fileID: 0}
+  stopDistance: 6
+  followDistance: 15
+--- !u!195 &1358144017024159218
+NavMeshAgent:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8509984374930100401}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96ce985f7f8317c4d86a683e6c59ff3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radius: 7
-  angle: 50
-  PlayerScript: {fileID: 0}
-  targetMask:
-    serializedVersion: 2
-    m_Bits: 0
-  obstructionMask:
-    serializedVersion: 2
-    m_Bits: 0
-  CanSeePlayer: 0
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4

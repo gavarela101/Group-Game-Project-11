@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 7952155435645517735}
   - component: {fileID: 7214125523424300943}
   - component: {fileID: 9147554077709561414}
-  - component: {fileID: 2427960587848965720}
   - component: {fileID: 1408297747161862088}
-  - component: {fileID: 6237951260425434049}
+  - component: {fileID: 7603395905838954727}
+  - component: {fileID: 1598192624737010565}
   m_Layer: 0
   m_Name: BaseEnemy
   m_TagString: Untagged
@@ -140,21 +140,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2427960587848965720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1983978249516967078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6967d07ecb4f4c943953cb04c9cd3032, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 8181593632211106972, guid: 460d04307970fcb4e8557872eb53ff1a, type: 3}
-  speed: 3
-  damage: 15
 --- !u!114 &1408297747161862088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,7 +153,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 0
---- !u!114 &6237951260425434049
+--- !u!195 &7603395905838954727
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983978249516967078}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &1598192624737010565
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -177,19 +184,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1983978249516967078}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96ce985f7f8317c4d86a683e6c59ff3d, type: 3}
+  m_Script: {fileID: 11500000, guid: c5087089d6826854f81d3fbc080ac1d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 7
-  angle: 50
-  PlayerScript: {fileID: 0}
-  targetMask:
-    serializedVersion: 2
-    m_Bits: 64
-  obstructionMask:
-    serializedVersion: 2
-    m_Bits: 128
-  CanSeePlayer: 0
+  Player: {fileID: 0}
+  nav: {fileID: 0}
+  stopDistance: 0
+  followDistance: 10
 --- !u!1 &2193540466923326509
 GameObject:
   m_ObjectHideFlags: 0

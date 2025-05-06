@@ -2,20 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Gabriel Varela
+ * 5/6/25
+ * handles code for enemy health 
+*/
 public class EnemyHealth : MonoBehaviour
 {
-    public int Health;
+    public int maxHealth;
+    private int currentHealth;
 
-    //Subtracts enemy health when shot by player
-    public void LoseHealth()
+    void Start()
     {
-        //have Enemy lose health 
-        Health--;
+        currentHealth = maxHealth;
+    }
 
-        //check if Enemy has zero health 
-        if (Health <= 0)
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        if (currentHealth <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
+    }
+
+    void Die()
+    {
+        Destroy(gameObject);
     }
 }
