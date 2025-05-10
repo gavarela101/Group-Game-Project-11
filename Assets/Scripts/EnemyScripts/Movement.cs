@@ -17,6 +17,14 @@ public class test : MonoBehaviour
     public float stopDistance;
     public float followDistance;
 
+    public int damage = 5;
+    // Time between damage
+    public float damageInterval = 1.0f; 
+    //time since last damage taken
+    private float lastDamageTime; 
+
+    public int maxHealth;
+    public int currentHealth;
 
     private void Start()
     {
@@ -24,6 +32,8 @@ public class test : MonoBehaviour
         Player = GameObject.FindGameObjectWithTag("Player").transform;
         //sets nav
         nav = GetComponent<NavMeshAgent>();
+        //sets current health at the start of game
+        currentHealth = maxHealth;
     }
 
     private void Update()
@@ -50,6 +60,28 @@ public class test : MonoBehaviour
             // Stop chasing if player is too far
             nav.SetDestination(transform.position); // Keep agent at current position
             nav.isStopped = true;
+        }
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player") && Time.time - lastDamageTime >= damageInterval)
+        {
+            // Apply damage to the player
+            collision.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
+            // Reset damage interval
+            lastDamageTime = Time.time; 
+        }
+    }
+
+    public void Die()
+    {
+        currentHealth--;
+
+        if (currentHealth <= maxHealth)
+        {
+            //destroys game object
+            Destroy(gameObject);
         }
     }
 }

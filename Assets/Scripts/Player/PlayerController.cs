@@ -84,6 +84,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void TakeDamage(int amount)
+    {
+        health -= amount;
+    }
+
     public void Death()
     {
         if (lives <= 0)

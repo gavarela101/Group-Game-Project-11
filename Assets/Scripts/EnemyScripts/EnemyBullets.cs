@@ -13,16 +13,14 @@ public class EnemyBullets : MonoBehaviour
         Destroy(gameObject, 5);
     }
 
-    /*
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<Player>())
+        if (other.GetComponent<PlayerController>())
         {
-            if (other.GetComponent<Player>().health >= 0)
+            if (other.GetComponent<PlayerController>().health >= 0)
             {
-                other.GetComponent<Player>().health -= damage;
+                other.GetComponent<PlayerController>().health -= damage;
             }
         }
     }
-    */
 }
