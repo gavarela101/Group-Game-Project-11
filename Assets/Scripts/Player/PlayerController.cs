@@ -5,13 +5,13 @@ using UnityEngine;
 /*
  * Jayden Saelee Chao
  * Contols player movement and other things
- * 4/29/2025
+ * 5/9/2025
  */
 
 public class PlayerController : MonoBehaviour
 {
     private CharacterController controller;
-
+     
     public float speed = 12f;
     public float gravity = -9.81f;
     public float jumpHeight = 3f;
@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
     public int blueArts = 0;
     public int spikeArts = 0;
     public int orangeArts = 0;
+    public int lives = 3;
+    public int health = 100;
 
     public Transform groundCheck;
     public float groundDistance = 0.4f;
@@ -72,5 +74,21 @@ public class PlayerController : MonoBehaviour
         }
 
         lastPosition = gameObject.transform.position;
+    } 
+
+    public void loseLife()
+    {
+        if (health <= 0)
+        {
+            lives--;
+        }
+    }
+
+    public void Death()
+    {
+        if (lives <= 0)
+        {
+            // switch scenes
+        }
     }
 }
