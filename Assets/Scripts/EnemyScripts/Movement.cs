@@ -63,14 +63,15 @@ public class test : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision other)
     {
-        if (collision.gameObject.CompareTag("Player") && Time.time - lastDamageTime >= damageInterval)
+        if (other.gameObject.CompareTag("Player") && Time.time - lastDamageTime >= damageInterval)
         {
-            // Apply damage to the player
-            collision.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
-            // Reset damage interval
-            lastDamageTime = Time.time; 
+            if (other.gameObject.GetComponent<PlayerController>().health >= 0)
+            {
+                other.gameObject.GetComponent<PlayerController>().health -= damage;
+                lastDamageTime = Time.time;
+            }
         }
     }
 
