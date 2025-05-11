@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /*
  * Jayden Saelee Chao
  * Contols player movement and other things
- * 5/9/2025
+ * 5/10/2025
  */
 
 public class PlayerController : MonoBehaviour
@@ -88,7 +89,7 @@ public class PlayerController : MonoBehaviour
     {
         if (lives <= 0)
         {
-            // switch scenes
+            SceneManager.LoadScene("GameOver");
         }
     }
 }
