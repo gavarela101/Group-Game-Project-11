@@ -70,6 +70,7 @@ public class test : MonoBehaviour
             if (other.gameObject.GetComponent<PlayerController>().health >= 0)
             {
                 other.gameObject.GetComponent<PlayerController>().health -= damage;
+
                 lastDamageTime = Time.time;
             }
         }

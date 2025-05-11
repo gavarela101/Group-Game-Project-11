@@ -2,6 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Gabriel Varela
+ * 5/6/25
+ * handles code for enemy bullets
+*/
+
 public class EnemyBullets : MonoBehaviour
 {
     public int damage;
