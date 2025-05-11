@@ -118,12 +118,11 @@ GameObject:
   - component: {fileID: 3811140970436383444}
   - component: {fileID: 7656225887187296278}
   - component: {fileID: 7935030150038898180}
-  - component: {fileID: 6249710331004442366}
   - component: {fileID: 2090581065255316645}
   - component: {fileID: 393699701356018108}
   m_Layer: 0
   m_Name: Mancubus
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -246,19 +245,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6249710331004442366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3552163934153364466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a97798f0ff2f0c458bee403ee05528a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 0
 --- !u!195 &2090581065255316645
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -297,6 +283,10 @@ MonoBehaviour:
   nav: {fileID: 0}
   stopDistance: 9
   followDistance: 20
+  damage: 5
+  damageInterval: 1
+  maxHealth: 35
+  currentHealth: 0
 --- !u!1 &6218254894737364361
 GameObject:
   m_ObjectHideFlags: 0

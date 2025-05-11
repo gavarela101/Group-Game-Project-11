@@ -47,6 +47,6 @@ MonoBehaviour:
   EnemyPrefabs:
   - {fileID: 1983978249516967078, guid: 9682b64ab0b5afd448e1c19092487caf, type: 3}
   - {fileID: 8509984374930100401, guid: 27be5933bd7c6a342a0485574c3e8851, type: 3}
-  - {fileID: 6027030418802547084, guid: 21f36ed48e72f8642a2fe75482523d90, type: 3}
+  - {fileID: 3217474521488792174, guid: 6982c1f1cf2f43740ab88699664a01c7, type: 3}
   spawnInterval: 4
   spawnAreaSize: {x: 10, y: 0, z: 10}

@@ -779,12 +779,11 @@ GameObject:
   m_Component:
   - component: {fileID: 7813271471933488652}
   - component: {fileID: 6898102544619920580}
-  - component: {fileID: 8161955037393361742}
   - component: {fileID: 3892497919707428245}
   - component: {fileID: 7509480048220870803}
   m_Layer: 0
   m_Name: SpiderBott
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -841,19 +840,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8161955037393361742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7339402767964035019}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a97798f0ff2f0c458bee403ee05528a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 0
 --- !u!114 &3892497919707428245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -870,6 +856,10 @@ MonoBehaviour:
   nav: {fileID: 0}
   stopDistance: 7
   followDistance: 20
+  damage: 5
+  damageInterval: 1
+  maxHealth: 3
+  currentHealth: 0
 --- !u!195 &7509480048220870803
 NavMeshAgent:
   m_ObjectHideFlags: 0

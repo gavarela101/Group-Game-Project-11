@@ -13,12 +13,11 @@ GameObject:
   - component: {fileID: 7952155435645517735}
   - component: {fileID: 7214125523424300943}
   - component: {fileID: 9147554077709561414}
-  - component: {fileID: 1408297747161862088}
   - component: {fileID: 7603395905838954727}
   - component: {fileID: 1598192624737010565}
   m_Layer: 0
   m_Name: BaseEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -140,19 +139,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1408297747161862088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1983978249516967078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a97798f0ff2f0c458bee403ee05528a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 0
 --- !u!195 &7603395905838954727
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -191,6 +177,10 @@ MonoBehaviour:
   nav: {fileID: 0}
   stopDistance: 0
   followDistance: 10
+  damage: 5
+  damageInterval: 1
+  maxHealth: 5
+  currentHealth: 0
 --- !u!1 &2193540466923326509
 GameObject:
   m_ObjectHideFlags: 0
