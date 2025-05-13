@@ -7,19 +7,15 @@ using UnityEngine;
  * 4/30/25
  * handles code for the death floor
  */
-
-
-/*
 public class DeathFloor : MonoBehaviour
 {
     public int death = 200;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<Player>())
+        if (other.GetComponent<PlayerController>())
         {
-            other.GetComponent<Player>().health -= death;
+            other.GetComponent<PlayerController>().health -= death;
         }
     }
 }
-*/
