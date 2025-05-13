@@ -12,9 +12,12 @@ GameObject:
   - component: {fileID: 3347446796617373168}
   - component: {fileID: 2381535474254773675}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - component: {fileID: 9018946510602397091}
   - component: {fileID: -653701165165702586}
 =======
+=======
+>>>>>>> Stashed changes
   - component: {fileID: -2838392997209552190}
   - component: {fileID: 913441759459793136}
 >>>>>>> Stashed changes
@@ -81,9 +84,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!135 &9018946510602397091
 SphereCollider:
 =======
+=======
+>>>>>>> Stashed changes
 --- !u!114 &-2838392997209552190
 MonoBehaviour:
   m_ObjectHideFlags: 0
