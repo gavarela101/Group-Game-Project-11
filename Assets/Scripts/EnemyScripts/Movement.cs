@@ -23,7 +23,6 @@ public class test : MonoBehaviour
     //time since last damage taken
     private float lastDamageTime; 
 
-    public int maxHealth;
     public int currentHealth;
 
     private void Start()
@@ -33,7 +32,6 @@ public class test : MonoBehaviour
         //sets nav
         nav = GetComponent<NavMeshAgent>();
         //sets current health at the start of game
-        currentHealth = maxHealth;
     }
 
     private void Update()
@@ -61,6 +59,7 @@ public class test : MonoBehaviour
             nav.SetDestination(transform.position); // Keep agent at current position
             nav.isStopped = true;
         }
+        Die();
     }
 
     private void OnCollisionEnter(Collision other)
@@ -78,9 +77,7 @@ public class test : MonoBehaviour
 
     public void Die()
     {
-        currentHealth--;
-
-        if (currentHealth <= maxHealth)
+        if (currentHealth <= 0)
         {
             //destroys game object
             Destroy(gameObject);

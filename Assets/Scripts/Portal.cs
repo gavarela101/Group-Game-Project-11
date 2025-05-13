@@ -14,9 +14,9 @@ public class Portal : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<PlayerController>())
+        if (other.CompareTag("Player"))
         {
-            other.transform.position = portalExit.position;
+            other.transform.position = portalExit.transform.position;
         }
     }
 }
