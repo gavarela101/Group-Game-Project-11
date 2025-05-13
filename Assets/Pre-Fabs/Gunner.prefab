@@ -599,8 +599,7 @@ MonoBehaviour:
   followDistance: 15
   damage: 5
   damageInterval: 1
-  maxHealth: 5
-  currentHealth: 0
+  currentHealth: 5
 --- !u!195 &1358144017024159218
 NavMeshAgent:
   m_ObjectHideFlags: 0

@@ -285,8 +285,7 @@ MonoBehaviour:
   followDistance: 20
   damage: 5
   damageInterval: 1
-  maxHealth: 35
-  currentHealth: 0
+  currentHealth: 35
 --- !u!1 &6218254894737364361
 GameObject:
   m_ObjectHideFlags: 0
