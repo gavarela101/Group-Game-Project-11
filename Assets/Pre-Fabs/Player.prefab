@@ -119,9 +119,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72bf3367c8b3eb040a1ce50175bf5113, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPre: {fileID: 1233203448809644463, guid: c46901b1c915484458c14f702c465a92, type: 3}
+  bulletPre: {fileID: 2493225195721322006, guid: 6a67b5cfb84d2aa468f250aa7d09a134, type: 3}
   bulletSpawn: {fileID: 4314902697056972968}
-  bulleteloity: 30
+  bulleteloity: 45
   bulletPreLifeTime: 3
 --- !u!1 &2326144040172773560
 GameObject:
@@ -148,7 +148,7 @@ Transform:
   m_GameObject: {fileID: 2326144040172773560}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.050000343, y: -0.09473688, z: 0.520548}
+  m_LocalPosition: {x: -0.050000343, y: -0.09473688, z: 0.74}
   m_LocalScale: {x: 5.555555, y: 5.2631583, z: 1.3698629}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -382,7 +382,7 @@ Transform:
   m_GameObject: {fileID: 8181593632211106972}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.25, z: 0}
+  m_LocalPosition: {x: -7.518877, y: 1.3675475, z: -0.729265}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

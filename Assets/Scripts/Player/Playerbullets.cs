@@ -13,15 +13,15 @@ public class Playerbullets : MonoBehaviour
     public int damage = 5; 
 
     //when the bullet collids with enemy subtract enemy health
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.tag == "Enemy")
+        if (collision.gameObject.CompareTag("Enemy"))
         {
             //if the enemy current hp is more than 0
-            if (other.GetComponent<test>().currentHealth >= 0)
+            if (collision.gameObject.GetComponent<test>().currentHealth >= 0)
             {
                 //subtracts enemy health
-                other.GetComponent<test>().currentHealth -= damage;
+                collision.gameObject.GetComponent<test>().currentHealth -= damage;
             }
         }
         Destroy(gameObject);

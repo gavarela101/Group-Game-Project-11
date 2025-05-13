@@ -75,6 +75,9 @@ public class PlayerController : MonoBehaviour
         }
 
         lastPosition = gameObject.transform.position;
+
+        loseLife();
+        Death();
     } 
 
     public void loseLife()
