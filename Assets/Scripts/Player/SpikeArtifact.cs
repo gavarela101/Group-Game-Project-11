@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /*
  * Jayden Saelee Chao
@@ -21,6 +22,8 @@ public class SpikeArtifact : MonoBehaviour
             other.GetComponent<PlayerController>().spikeArts++;
 
             Destroy(gameObject);
+
+            SceneManager.LoadScene("WinScreen");
         }
     }
 }
