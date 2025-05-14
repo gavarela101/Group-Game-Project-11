@@ -3967,6 +3967,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Portal
       objectReference: {fileID: 0}
+    - target: {fileID: 5107749424054813007, guid: 814abd71ff64dad49ad1632f2423a20d, type: 3}
+      propertyPath: playerPrefab
+      value: 
+      objectReference: {fileID: 8181593632211106972, guid: 460d04307970fcb4e8557872eb53ff1a, type: 3}
+    - target: {fileID: 5107749424054813007, guid: 814abd71ff64dad49ad1632f2423a20d, type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 856360829}
     - target: {fileID: 5425520907485656560, guid: 814abd71ff64dad49ad1632f2423a20d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 86.95
@@ -7993,6 +8001,11 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!4 &247753338 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1713835114767092859, guid: 814abd71ff64dad49ad1632f2423a20d, type: 3}
+  m_PrefabInstance: {fileID: 952914070}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &248088206
 GameObject:
   m_ObjectHideFlags: 0
@@ -12091,7 +12104,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2165478186644758682, guid: 460d04307970fcb4e8557872eb53ff1a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.16
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 2165478186644758682, guid: 460d04307970fcb4e8557872eb53ff1a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12099,7 +12112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165478186644758682, guid: 460d04307970fcb4e8557872eb53ff1a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.28
+      value: -3.1
       objectReference: {fileID: 0}
     - target: {fileID: 2165478186644758682, guid: 460d04307970fcb4e8557872eb53ff1a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -26135,6 +26148,11 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!4 &856360829 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1713835114767092859, guid: 814abd71ff64dad49ad1632f2423a20d, type: 3}
+  m_PrefabInstance: {fileID: 112315979}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &861253670
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27901,6 +27919,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Portal
       objectReference: {fileID: 0}
+    - target: {fileID: 5107749424054813007, guid: 814abd71ff64dad49ad1632f2423a20d, type: 3}
+      propertyPath: playerPrefab
+      value: 
+      objectReference: {fileID: 8181593632211106972, guid: 460d04307970fcb4e8557872eb53ff1a, type: 3}
+    - target: {fileID: 5107749424054813007, guid: 814abd71ff64dad49ad1632f2423a20d, type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 247753338}
     - target: {fileID: 5425520907485656560, guid: 814abd71ff64dad49ad1632f2423a20d, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.06852001
@@ -27954,6 +27980,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 814abd71ff64dad49ad1632f2423a20d, type: 3}
+--- !u!4 &955916280 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1713835114767092859, guid: 814abd71ff64dad49ad1632f2423a20d, type: 3}
+  m_PrefabInstance: {fileID: 2051676095}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &966472636
 GameObject:
   m_ObjectHideFlags: 0
@@ -31287,6 +31318,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Portal
       objectReference: {fileID: 0}
+    - target: {fileID: 5107749424054813007, guid: 814abd71ff64dad49ad1632f2423a20d, type: 3}
+      propertyPath: playerPrefab
+      value: 
+      objectReference: {fileID: 8181593632211106972, guid: 460d04307970fcb4e8557872eb53ff1a, type: 3}
+    - target: {fileID: 5107749424054813007, guid: 814abd71ff64dad49ad1632f2423a20d, type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 1571893416}
     - target: {fileID: 5425520907485656560, guid: 814abd71ff64dad49ad1632f2423a20d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.55
@@ -43965,6 +44004,11 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!4 &1571893416 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1713835114767092859, guid: 814abd71ff64dad49ad1632f2423a20d, type: 3}
+  m_PrefabInstance: {fileID: 1071639739}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1573297960
 GameObject:
   m_ObjectHideFlags: 0
@@ -57913,6 +57957,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Portal
       objectReference: {fileID: 0}
+    - target: {fileID: 5107749424054813007, guid: 814abd71ff64dad49ad1632f2423a20d, type: 3}
+      propertyPath: playerPrefab
+      value: 
+      objectReference: {fileID: 8181593632211106972, guid: 460d04307970fcb4e8557872eb53ff1a, type: 3}
+    - target: {fileID: 5107749424054813007, guid: 814abd71ff64dad49ad1632f2423a20d, type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 955916280}
     - target: {fileID: 5425520907485656560, guid: 814abd71ff64dad49ad1632f2423a20d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 45.78
