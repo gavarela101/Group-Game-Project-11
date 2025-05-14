@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     public int spikeArts = 0;
     public int orangeArts = 0;
     public int lives = 3;
+    public int Maxhealth = 100;
     public int health = 100;
 
     public Transform groundCheck;
@@ -77,7 +78,6 @@ public class PlayerController : MonoBehaviour
         lastPosition = gameObject.transform.position;
 
         loseLife();
-        Death();
     } 
 
     public void loseLife()
@@ -85,14 +85,17 @@ public class PlayerController : MonoBehaviour
         if (health <= 0)
         {
             lives--;
+            health = Maxhealth;
         }
+        else if (lives <= 0)
+        {
+            Death();
+        }
+
     }
 
     public void Death()
     {
-        if (lives <= 0)
-        {
-            SceneManager.LoadScene("GameOver");
-        }
+     SceneManager.LoadScene("GameOver");
     }
 }
