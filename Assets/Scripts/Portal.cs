@@ -21,6 +21,17 @@ public class Portal : MonoBehaviour
             Destroy(other.gameObject);
             // Spawn the player at the respawn point
             Instantiate(playerPrefab, respawnPoint.position, respawnPoint.rotation);
+            DestroyAllObjectsWithTag();
+        }
+    }
+
+    public void DestroyAllObjectsWithTag()
+    {
+        GameObject[] objectsWithTag = GameObject.FindGameObjectsWithTag("Enemy");
+
+        foreach (GameObject obj in objectsWithTag)
+        {
+            Destroy(obj);
         }
     }
 }

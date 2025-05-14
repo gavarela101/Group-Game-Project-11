@@ -24,12 +24,12 @@ public class Gunner : MonoBehaviour
     {
         float rand = Random.Range(1.0f, 2.0f);
         InvokeRepeating("Shoot", 2, rand);
+        Player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     void Update()
     {
         inRange = Vector3.Distance(transform.position, Player.position) < range;
-        Player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     private void Shoot()
