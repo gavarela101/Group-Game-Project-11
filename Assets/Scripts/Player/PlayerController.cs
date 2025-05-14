@@ -96,6 +96,7 @@ public class PlayerController : MonoBehaviour
 
     public void Death()
     {
-     SceneManager.LoadScene("GameOver");
+        Destroy(gameObject);
+        SceneManager.LoadScene("GameOver");
     }
 }

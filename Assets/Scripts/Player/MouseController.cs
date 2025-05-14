@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /*
  * Jayden Saelee Chao
@@ -18,15 +19,16 @@ public class MouseController : MonoBehaviour
     public float topClamp = -90f;
     public float bottomClamp = 90f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        Cursor.lockState = CursorLockMode.Locked;
-    }
+    private bool _isControllerActive = true;
 
     // Update is called once per frame
     void Update()
     {
+        if (!_isControllerActive)
+        {
+            return; // Exit if controller is disabled
+        }
+
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
@@ -38,4 +40,29 @@ public class MouseController : MonoBehaviour
 
         transform.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);
     }
+    
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "MainGame")
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            _isControllerActive = true; // enable in menu scene
+        }
+        else
+        {
+            _isControllerActive = false; // disable in other scenes
+            Cursor.visible = true;
+        }
+    }
+
 }
