@@ -17,5 +17,11 @@ public class DeathFloor : MonoBehaviour
         {
             other.GetComponent<PlayerController>().health -= death;
         }
+        else 
+        if (other.tag == "Enem")
+        {
+            other.GetComponent <test>().currentHealth -= death;
+        }
     }
+    
 }

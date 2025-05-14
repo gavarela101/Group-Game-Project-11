@@ -9,38 +9,40 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public GameObject[] EnemyPrefabs;
-    
-    public float spawnInterval;
-    public Vector3 spawnAreaSize;
+    public GameObject[] enemyPrefabs; // Array of enemy prefabs to choose from
+    public Transform[] spawnPoints; // Array of spawn points to choose from
+    public float spawnInterval; // Time between each spawn
+    public int maxEnemies = 10; // Maximum number of enemies to spawn
 
-    void Start()
+    // Keep track of spawned enemies
+    private int _currentEnemyCount = 0;
+
+    private void Start()
     {
-        StartCoroutine(SpawnEnemies());
+        // Start the spawning coroutine
+        StartCoroutine(SpawnEnemies()); 
     }
 
-    /// <summary>
-    /// spawns enemy in a random location after a certain amount of time
-    /// </summary>
-    /// <returns></returns>
+    // Spawn enemies using a coroutine
     IEnumerator SpawnEnemies()
     {
-        while (true)
+        // Limit the number of enemies spawned
+        while (_currentEnemyCount < maxEnemies) 
         {
-            //selects a random enemy to spawn
-            int prefabIndex = Random.Range(0, EnemyPrefabs.Length);
-            GameObject enemyPrefab = EnemyPrefabs[prefabIndex];
+            // Randomly select a prefab and spawn point
+            int enemyIndex = Random.Range(0, enemyPrefabs.Length);
+            int spawnPointIndex = Random.Range(0, spawnPoints.Length);
 
-            //creates a random spawn location for enemies
-            Vector3 spawnPosition = new Vector3(Random.Range(-spawnAreaSize.x, spawnAreaSize.x), 
-                0,//keeps y at zero
-                Random.Range(-spawnAreaSize.z, spawnAreaSize.z));
+            // Instantiate the enemy prefab at the spawn point
+            GameObject newEnemy = Instantiate(enemyPrefabs[enemyIndex], spawnPoints[spawnPointIndex].position, Quaternion.identity);
+            _currentEnemyCount++;
 
-            //Instantiate enemies
-            Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
-
-            //Spawn cooldown
+            // Wait for the specified interval before spawning the next enemy
             yield return new WaitForSeconds(spawnInterval);
         }
+
+        Debug.Log("Maximum number of enemies reached, stopping spawning.");
+        yield break; // Stop the coroutine
     }
+
 }
