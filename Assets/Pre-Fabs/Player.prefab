@@ -454,6 +454,7 @@ MonoBehaviour:
   spikeArts: 0
   orangeArts: 0
   lives: 3
+  Maxhealth: 100
   health: 100
   groundCheck: {fileID: 3130335795343858885}
   groundDistance: 0.4
